@@ -10,3 +10,15 @@
   background: #b8923b;
   color: #ffffff !important;
 }
+
+.nav .btn-small,
+.nav .btn-small:visited {
+  background: #111111;
+  color: #ffffff !important;
+}
+
+.nav .btn-small:hover,
+.nav .btn-small:focus {
+  background: #b8923b;
+  color: #ffffff !important;
+}
