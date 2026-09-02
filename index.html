@@ -670,18 +670,17 @@
 
 
         <form
-          onsubmit="
-            event.preventDefault();
-            document.getElementById('form-msg').textContent=
-            'Thanks — your request is ready to connect to your email or CRM.';
-          "
-        >
+  action="https://formspree.io/f/xbgjyode"
+  method="POST"
+>
 
           <label>
             Business Name
+        
             <input
               required
               type="text"
+        name="business_name"
               placeholder="Your business name"
             />
           </label>
@@ -692,16 +691,18 @@
             <input
               required
               type="text"
+              name="name"
               placeholder="Your name"
             />
-          </label>
-
+          </label
 
           <label>
-            Email
+Email
+          
             <input
               required
               type="email"
+              name="email"
               placeholder="you@example.com"
             />
           </label>
@@ -711,6 +712,7 @@
             Website or Google Listing
             <input
               type="url"
+              name="website"
               placeholder="https://"
             />
           </label>
@@ -721,6 +723,7 @@
 
             <textarea
               rows="5"
+              name="message"
               placeholder="Tell us about your business, goals, or challenges..."
             ></textarea>
 
