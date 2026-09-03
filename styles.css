@@ -52,3 +52,13 @@
   color: #071a2f;
   text-decoration: underline;
 }
+@media (max-width: 600px) {
+  .direct-contact a {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+}
