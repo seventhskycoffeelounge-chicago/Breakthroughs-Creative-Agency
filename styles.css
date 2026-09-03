@@ -22,3 +22,33 @@
   background: #b8923b;
   color: #ffffff !important;
 }
+
+.direct-contact {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #d8c79f;
+}
+
+.direct-contact p {
+  margin: 0 0 10px;
+}
+
+.direct-contact strong {
+  font-size: 1.2rem;
+  color: #111111;
+}
+
+.direct-contact a,
+.direct-contact a:visited {
+  color: #9b792f;
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.direct-contact a:hover,
+.direct-contact a:focus {
+  color: #071a2f;
+  text-decoration: underline;
+}
