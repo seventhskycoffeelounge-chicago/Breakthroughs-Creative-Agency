@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Break Through Creative Agency</title>
+
+  <style>
+    :root {
+      --navy: #071a2f;
+      --navy-light: #102d4c;
+      --gold: #c99732;
+      --gold-light: #e1b552;
+      --white: #ffffff;
+      --soft: #f5f7fa;
+      --text: #152238;
+      --muted: #667085;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--soft);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 24px 6%;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold-light);
+    }
+
+    .tagline {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: .9;
+      text-align: right;
+    }
+
+    .tagline strong {
+      color: var(--gold-light);
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(255,255,255,.91), rgba(255,255,255,.96)),
+        url("IMG_9763.jpeg") center/cover;
+      padding: 80px 20px 55px;
+      text-align: center;
+    }
+
+    .check {
+      width: 78px;
+      height: 78px;
+      border: 3px solid var(--navy);
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 44px;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: var(--navy);
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .hero h2 {
+      color: var(--navy);
+      font-size: clamp(19px, 3vw, 28px);
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .divider {
+      width: 100px;
+      height: 3px;
+      background: var(--gold);
+      margin: 25px auto;
+    }
+
+    .next {
+      max-width: 1150px;
+      margin: -5px auto 50px;
+      padding: 0 20px;
+    }
+
+    .next-box {
+      background: white;
+      border: 1px solid #d8dde5;
+      border-radius: 18px;
+      padding: 42px 35px;
+      box-shadow: 0 12px 35px rgba(7,26,47,.08);
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--navy);
+      font-size: 25px;
+      letter-spacing: 1px;
+      margin-bottom: 35px;
+    }
+
+    .section-title span {
+      color: var(--gold);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+
+    .step {
+      text-align: center;
+      padding: 10px 32px;
+    }
+
+    .step + .step {
+      border-left: 1px solid #d9dee6;
+    }
+
+    .number {
+      width: 50px;
+      height: 50px;
+      background: var(--navy);
+      color: var(--gold-light);
+      border-radius: 12px;
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .step h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .statement {
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      color: white;
+      padding: 55px 20px;
+    }
+
+    .statement-inner {
+      max-width: 1050px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .quote {
+      color: var(--gold-light);
+      font-size: 50px;
+      line-height: .7;
+    }
+
+    .statement h2 {
+      font-size: clamp(24px, 4vw, 35px);
+      margin: 15px auto;
+      max-width: 850px;
+    }
+
+    .statement h2 span {
+      color: var(--gold-light);
+    }
+
+    .statement p {
+      max-width: 700px;
+      margin: auto;
+      color: #e8edf3;
+    }
+
+    .return {
+      text-align: center;
+      padding: 45px 20px;
+      background: white;
+    }
+
+    .return h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .return p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 7px;
+      font-weight: bold;
+      border: 2px solid var(--navy);
+      transition: .2s ease;
+    }
+
+    .button:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--navy);
+    }
+
+    footer {
+      background: #04111f;
+      color: #d9e0e8;
+      text-align: center;
+      padding: 27px 20px;
+      border-top: 2px solid var(--gold);
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        display: block;
+        text-align: center;
+      }
+
+      .tagline {
+        text-align: center;
+        margin-top: 12px;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .step {
+        padding: 25px 10px;
+      }
+
+      .step + .step {
+        border-left: none;
+        border-top: 1px solid #d9dee6;
+      }
+
+      .next-box {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <span>BREAK</span> THROUGH<br>
+      <small>CREATIVE AGENCY</small>
+    </div>
+
+    <div class="tagline">
+      Strategy. Branding. Growth.<br>
+      Built to <strong>Break Through.</strong>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="check">✓</div>
+
+  <h1>THANK <span>YOU!</span></h1>
+
+  <h2>WE'VE RECEIVED YOUR REQUEST.</h2>
+
+  <div class="divider"></div>
+
+  <p>
+    We appreciate you reaching out to Break Through Creative Agency.
+    Your consultation request has been successfully submitted.
+  </p>
+</section>
+
+<section class="next">
+  <div class="next-box">
+
+    <h2 class="section-title">
+      WHAT HAPPENS <span>NEXT?</span>
+    </h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="number">1</div>
+        <h3>WE REVIEW YOUR REQUEST</h3>
+        <p>
+          We'll review your information and learn more about
+          your business, goals, and current needs.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="number">2</div>
+        <h3>WE'LL BE IN TOUCH</h3>
+        <p>
+          You can expect to hear from us within one business
+          day regarding your consultation.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="number">3</div>
+        <h3>LET'S BUILD YOUR BREAKTHROUGH</h3>
+        <p>
+          Together, we'll identify opportunities and develop
+          practical strategies designed to move your business forward.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="statement-inner">
+    <div class="quote">“</div>
+
+    <h2>
+      At Break Through Creative Agency, we don't just build brands —
+      <span>we build breakthroughs.</span>
+    </h2>
+
+    <p>
+      We're excited to learn more about your business, understand
+      where you want to go, and explore how we can help you get there.
+    </p>
+  </div>
+</section>
+
+<section class="return">
+  <h3>In the meantime, keep exploring.</h3>
+
+  <p>
+    Learn more about how Break Through Creative Agency helps
+    small businesses strengthen their brand, visibility, and growth.
+  </p>
+
+  <a class="button" href="/">
+    Return to Break Through Creative Agency
+  </a>
+</section>
+
+<footer>
+  <strong>Break Through Creative Agency</strong><br>
+  Strategy • Branding • Growth<br><br>
+  © 2026 Break Through Creative Agency. All rights reserved.
+</footer>
+
+</body>
+</html>
